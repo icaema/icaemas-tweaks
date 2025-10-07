@@ -1,11 +1,11 @@
 {
-  "Plugin-Class": "org.example.ExamplePlugin",
+  "Plugin-Class": "org.icaema.IcaemasTweaksPlugin",
   "Name": "${project.plugin_name}",
   "Version": "${project.plugin_version}",
-  "Description": "Example rusherhack plugin",
+  "Description": "Icaema's personal plugin for tweaks",
   "URL": "https://github.com/RusherDevelopment/example-plugin",
   "Authors": [
-    "John200410"
+    "Icaema"
   ],
   "Minecraft-Versions": [
     "${project.minecraft_version}"
