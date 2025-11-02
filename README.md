@@ -9,6 +9,10 @@ Suggestions are appreciated and can be put in the issue tab on github
 Creates a keybind that can be used to switch between a chestplate and an elytra.  Also includes an 
 autodeploy feature if you switch while falling.
 
++ RocketTakeoff
+
+Auto start flying when right clicking with a rocket if standing on ground.
+
 + Hotbar Swap
 
 Creates a keybind that can switch any hotbar slots with the slots right above in the inventory.
