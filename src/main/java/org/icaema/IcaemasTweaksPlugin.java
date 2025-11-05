@@ -1,5 +1,6 @@
 package org.icaema;
 
+import org.icaema.module.IcaemasTweaksBeaconGrid;
 import org.icaema.module.IcaemasTweaksElytraToggle;
 import org.icaema.module.IcaemasTweaksHotbarSwap;
 import org.icaema.module.IcaemasTweaksRocketTakeoff;
@@ -18,10 +19,12 @@ public class IcaemasTweaksPlugin extends Plugin {
         final IcaemasTweaksElytraToggle elytraToggle = new IcaemasTweaksElytraToggle();
         final IcaemasTweaksHotbarSwap hotbarSwap = new IcaemasTweaksHotbarSwap();
         final IcaemasTweaksRocketTakeoff rocketTakeoff = new IcaemasTweaksRocketTakeoff();
+        final IcaemasTweaksBeaconGrid  beaconGrid = new IcaemasTweaksBeaconGrid();
 
         RusherHackAPI.getModuleManager().registerFeature(elytraToggle);
         RusherHackAPI.getModuleManager().registerFeature(hotbarSwap);
         RusherHackAPI.getModuleManager().registerFeature(rocketTakeoff);
+        RusherHackAPI.getModuleManager().registerFeature(beaconGrid);
 
         /*
         //creating and registering a new hud element

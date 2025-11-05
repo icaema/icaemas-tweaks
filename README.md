@@ -17,5 +17,9 @@ Auto start flying when right clicking with a rocket if standing on ground.
 
 Creates a keybind that can switch any hotbar slots with the slots right above in the inventory.
 
++ Beacon Grid
+
+Marks where beacons should be placed for optimal grid pattern.
+
 ## Installation
 To install the plugin into RusherHack, you can follow the instructions on the [RusherHack plugins repository](https://github.com/RusherDevelopment/rusherhack-plugins?tab=readme-ov-file#installation)

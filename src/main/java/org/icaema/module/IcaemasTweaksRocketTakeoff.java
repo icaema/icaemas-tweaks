@@ -39,18 +39,22 @@ public class IcaemasTweaksRocketTakeoff extends ToggleableModule {
         if ( mc.player == null) return;
         if (packet.getHand() != InteractionHand.MAIN_HAND) return;
 
-        // If a firework is used in this packet, set flight var to be duration of used firework (1,2,3)
+        // If a firework is used in this packet
         ItemStack stack = mc.player.getInventory().getItem(mc.player.getInventory().selected);
         if (!stack.is(Items.FIREWORK_ROCKET)) return;
         Fireworks fireworks = stack.get(DataComponents.FIREWORKS);
         if (fireworks == null) return;
+        if (!hasElytraEquipped(mc.player)) return;
 
         // check if player is not flying already
-        if (!(mc.player.onGround() || mc.player.isSwimming()) || mc.player.isFallFlying()) return;
+        if (mc.player.isFallFlying()) return;
 
-        if (!hasElytraEquipped(mc.player)) return;
-        mc.player.jumpFromGround();
-        mc.tick();
+        // if player is on ground, then need to jump for a tick first
+        if (mc.player.onGround()) {
+            mc.player.jumpFromGround();
+            mc.tick();
+        }
+
         startFlying(mc.player);
     }
 
